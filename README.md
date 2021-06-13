@@ -17,7 +17,8 @@ Start with
 python manage.py runserver
 #default port 8000
 ```
-Admin page at localhost:8000/admin
-Super user admin account ->   
-* username = admin
-* password = admin
+Admin page at localhost:8000/admin\
+\
+Super user admin account ->\
+username = admin\
+password = admin
