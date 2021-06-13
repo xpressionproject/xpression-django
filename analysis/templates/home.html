@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<br>
+<div id="datastuff" class="container-fluid">
+    <div class="search">
+
+      <form action="#">
+
+        {% csrf_token %}
+        
+        <label for="searchword">Enter search term :</label>
+        <br>
+
+        <input type="text" required name="searchword" id="searchword">
+
+        {% if user.is_authenticated %}
+        <input type="submit" class="btn-submit btn-large" name="" value="Search!">
+
+        {% else %}
+        <input type="submit" class="btn-submit btn-large" disabled name="" value="Search!"> Log in to analyze
+
+        {% endif %}
+      </form>
+      
+    </div>
+  </div>
+
+{% endblock %}  
